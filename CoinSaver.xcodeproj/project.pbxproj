@@ -13,6 +13,8 @@
 		7056907A21204B44003B63A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7056907821204B44003B63A1 /* Main.storyboard */; };
 		7056908621204B44003B63A1 /* CoinSaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056908521204B44003B63A1 /* CoinSaverTests.swift */; };
 		7056909121204B44003B63A1 /* CoinSaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7056909021204B44003B63A1 /* CoinSaverUITests.swift */; };
+		70CFA8232122196500220EF0 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFA8222122196500220EF0 /* HelpViewController.swift */; };
+		70F91E7B2120755100C0B044 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F91E7A2120755100C0B044 /* CreditsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7056908C21204B44003B63A1 /* CoinSaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinSaverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7056909021204B44003B63A1 /* CoinSaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSaverUITests.swift; sourceTree = "<group>"; };
 		7056909221204B44003B63A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70CFA8222122196500220EF0 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		70F91E7A2120755100C0B044 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				7056907221204B42003B63A1 /* AppDelegate.swift */,
 				7056907421204B42003B63A1 /* ViewController.swift */,
+				70F91E7A2120755100C0B044 /* CreditsViewController.swift */,
+				70CFA8222122196500220EF0 /* HelpViewController.swift */,
 				7056907621204B44003B63A1 /* Assets.xcassets */,
 				7056907821204B44003B63A1 /* Main.storyboard */,
 				7056907B21204B44003B63A1 /* Info.plist */,
@@ -255,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7056907521204B42003B63A1 /* ViewController.swift in Sources */,
+				70F91E7B2120755100C0B044 /* CreditsViewController.swift in Sources */,
 				7056907321204B42003B63A1 /* AppDelegate.swift in Sources */,
+				70CFA8232122196500220EF0 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +436,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaver;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -447,7 +456,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaver;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -467,6 +477,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaverTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -488,6 +499,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaverTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -508,6 +520,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaverUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -528,6 +541,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.egogames.coinSaver.CoinSaverUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
